@@ -81,7 +81,7 @@ export default function Page() {
         <div className="App m-3 sm:mx-5 sm:my-2 md:my-5 md:mx-10">
             <div className="md:flex md:justify-between md:items-center">
                 <h1 className="text-2xl font-bold mb-4 min-sm:text-sm text-[#181719]">Random Activities</h1>
-                <div className="mb-4">
+                <div className="mb-4 flex flex-col sm:flex-row">
                     <button
                         onClick={downloadCSV}
                         className="px-4 py-2 bg-[#758694] text-white rounded mr-2 text-sm w-[146px]"
@@ -90,19 +90,19 @@ export default function Page() {
                     </button>
                     <button
                         onClick={downloadJSON}
-                        className="px-4 py-2 bg-[#758694] text-white rounded mr-2 text-sm w-[146px]"
+                        className="px-4 py-2 bg-[#758694] text-white rounded mr-2 text-sm w-[146px] mt-2 sm:mt-0"
                     >
                         Download JSON
                     </button>
                     <button
                         onClick={printToConsole}
-                        className="px-4 py-2 bg-[#758694] text-white rounded text-sm w-[146px]"
+                        className="px-4 py-2 bg-[#758694] text-white rounded text-sm w-[146px] mt-2 sm:mt-0"
                     >
                         Print to Console
                     </button>
                 </div>
             </div>
-            
+
             <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
                 <table className="w-full text-sm text-left rtl:text-right text-[#FFF8F3] h-[300px]">
                     <thead className="text-xs text-[#FFF8F3] uppercase bg-[#405D72]">
